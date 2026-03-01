@@ -32,9 +32,6 @@ LibraryManagementSystem/
 
 ## 🚀 Getting Started
 
-### Clone the Repository
-git clone https://github.com/your-username/LibraryManagementSystem.git
-
 ### Run the Backend
 cd Backend
 dotnet run
