@@ -30,7 +30,31 @@ LibraryManagementSystem/
     ├── package.json
     └── vite.config.ts
 
-## 🏗️ Architecture
+## 🚀 Getting Started
+
+### Clone the Repository
+git clone https://github.com/your-username/LibraryManagementSystem.git
+
+### Run the Backend
+cd Backend
+dotnet run
+
+### Run the Frontend
+Open a **new terminal** window:
+cd frontend
+npm install
+npm run dev
+
+
+## 🗄️ Database
+
+The project uses **SQLite** with **Entity Framework Core** (Code First approach).
+
+- The database file `library.db` is automatically created in the `Backend/` folder when the app first runs.
+- No database installation or configuration is required.
+- The `Books` table is generated from the `Book.cs` model class automatically.
+
+##  Architecture
 
 This project follows the **MVC (Model-View-Controller)** pattern:
 -----------------------------------------------------------------------------------
