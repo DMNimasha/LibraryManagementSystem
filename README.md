@@ -23,9 +23,20 @@ LibraryManagementSystem/
     │   │   └── booksapi.ts         # All API call functions
     │   ├── components/
     │   │   ├── BookForm.tsx        # Add / Edit book form
-    │   │   └── BookList.tsx        # Scrollable book list
+    │   │   └── BookList.tsx        #  book list
     │   ├── types/
     │   │   └── index.ts            # TypeScript interfaces
     │   └── App.tsx                 # Root component
     ├── package.json
     └── vite.config.ts
+
+## 🏗️ Architecture
+
+This project follows the **MVC (Model-View-Controller)** pattern:
+-----------------------------------------------------------------------------------
+| MVC Layer      | Implementation                                                 |
+|----------------|----------------------------------------------------------------|
+| **Model**      | `Book.cs` — defines the data structure                         |
+| **View**       | React frontend — renders the UI                                |
+| **Controller** | `BooksController.cs` — handles HTTP requests and business logic|
+-----------------------------------------------------------------------------------
