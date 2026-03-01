@@ -37,7 +37,6 @@ cd Backend
 dotnet run
 
 ### Run the Frontend
-Open a **new terminal** window:
 cd frontend
 npm install
 npm run dev
