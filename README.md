@@ -1,3 +1,31 @@
 # 📚 Library Management System
 
 A full-stack web application for managing a library's book collection. Built with **React + TypeScript** on the frontend and **C# .NET Web API** with **SQLite** on the backend.
+
+## 🗂️ Project Structure
+
+```
+LibraryManagementSystem/
+├── Backend/                        # C# .NET Web API
+│   ├── Controllers/
+│   │   └── BooksController.cs      # API endpoints (CRUD)
+│   ├── Data/
+│   │   └── LibraryContext.cs       # Entity Framework DB context
+│   ├── Models/
+│   │   └── Book.cs                 # Book data model
+│   ├── Program.cs                  # App configuration & startup
+│   ├── Backend.csproj
+│   └── library.db                  # SQLite database (auto-created)
+│
+└── frontend/                       # React + TypeScript
+    ├── src/
+    │   ├── api/
+    │   │   └── booksapi.ts         # All API call functions
+    │   ├── components/
+    │   │   ├── BookForm.tsx        # Add / Edit book form
+    │   │   └── BookList.tsx        # Scrollable book list
+    │   ├── types/
+    │   │   └── index.ts            # TypeScript interfaces
+    │   └── App.tsx                 # Root component
+    ├── package.json
+    └── vite.config.ts
